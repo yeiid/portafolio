@@ -1,0 +1,67 @@
+
+import Image from 'next/image'
+import logo from '../../assets/logo.ico'
+import './header.css'
+
+
+const Header = () => {
+
+    return (
+        <header className="header">
+            <nav className="nav">
+                <a href="/" className="nav__logo">    
+                <Image
+                    src={logo}
+                    width={200}
+                    height={200}
+                    alt="logo"/></a>
+
+                <div>
+                    <ul className="nav__list ">
+
+                        <li className="nav__item">
+                            <a className= "nav__link"  href="#home" >
+                                <i class='bx bx-home-alt-2 nav__icon' ></i>Home
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a className= "nav__link" href="#about">
+                                <i class='bx bx-message-square nav__icon' ></i>
+                                About
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a className= "nav__link" href="#skills" >
+                                <i class='bx bx-code-alt nav__icon'></i>Skills
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a className= "nav__link" href="#services">
+                                <i class='bx bx-run'></i>Service
+                            </a>
+                        </li>
+
+                        <li className="nav__item">
+                            <a className= "nav__link" href="#contact">
+                                <i class='bx bxs-contact' ></i>
+                                Contact
+                            </a>
+                        </li>
+                        {/* <li className="nav__item">
+                            <a href="#qualication">
+                                <i className="uil uil-scenery nav__icon"></i>
+                                qualication
+                            </a>
+                        </li> */}
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    )
+}
+
+export default Header;

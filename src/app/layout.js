@@ -5,7 +5,7 @@ import 'boxicons/css/boxicons.min.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Create Next App'
+  title: 'Portafolio'
 }
 
 export default function RootLayout({ children }) {

@@ -14,7 +14,7 @@ const Social = () => {
         className="home__social-icon"
         target="blank"
       >
-      <i class="bx bxl-facebook"></i>
+      <i className="bx bxl-facebook"></i>
 
       </a>
 
@@ -23,7 +23,7 @@ const Social = () => {
         className="home__social-icon"
         target="blank"
       >
-        <i class='bx bxl-github'></i>
+        <i className='bx bxl-github'></i>
       </a>
     </div>
   );

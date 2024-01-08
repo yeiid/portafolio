@@ -21,32 +21,32 @@ const Header = () => {
 
                         <li className="nav__item">
                             <a className= "nav__link"  href="#home" >
-                                <i class='bx bx-home-alt-2 nav__icon' ></i>Home
+                                <i className='bx bx-home-alt-2 nav__icon' ></i>Home
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a className= "nav__link" href="#about">
-                                <i class='bx bx-message-square nav__icon' ></i>
+                                <i className='bx bx-message-square nav__icon' ></i>
                                 About
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a className= "nav__link" href="#skills" >
-                                <i class='bx bx-code-alt nav__icon'></i>Skills
+                                <i className='bx bx-code-alt nav__icon'></i>Skills
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a className= "nav__link" href="#services">
-                                <i class='bx bx-run'></i>Service
+                                <i className='bx bx-run'></i>Service
                             </a>
                         </li>
 
                         <li className="nav__item">
                             <a className= "nav__link" href="#contact">
-                                <i class='bx bxs-contact' ></i>
+                                <i className='bx bxs-contact' ></i>
                                 Contact
                             </a>
                         </li>

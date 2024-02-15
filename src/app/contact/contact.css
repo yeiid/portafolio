@@ -5,6 +5,8 @@
     justify-content: center;
     column-gap: 6rem;
     padding-bottom: 3rem;
+    background: rgba(255, 255, 255, 0.26);
+
 }
 
 .contact__title{

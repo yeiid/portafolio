@@ -1,5 +1,5 @@
 
-import {CartSkill} from '@/components/CartSkill'
+import { CartSkill } from "../../components/CartSkill";
 
 
 const Backend = () => {
@@ -13,12 +13,12 @@ const Backend = () => {
           <CartSkill name="NodeJs" level= "Basic" />
           <CartSkill name="Python" level= "Basic" />
         </div>
-        <div className="skills__group">
+        {/* <div className="skills__group">
 
         <CartSkill name="MySQL" level= "Basic" />
         <CartSkill name="Firebase" level= "BaIntermediatesic" />
         <CartSkill name="Django" level= "Basic" />
-      </div>
+      </div> */}
       </div>
     </div>
   )

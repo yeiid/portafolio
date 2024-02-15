@@ -1,7 +1,8 @@
 "use client"
 import './qualication.css'
 import { useState } from 'react'
-import {CartQuality} from '@/components/CartQuality'
+// import {CartQuality} from '@/components/CartQuality'
+import { CartQuality } from "../../components/CartQuality";
 
 
 
@@ -16,8 +17,9 @@ const Qualication = () => {
         <section className="qualication section">
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">My personel journey</span>
+            <div className="qualication__conten container ">
 
-            <div className="qualication__container container">
+            <div className="qualication__container ">
                 <div className="qualication__tabs">
                     <div className={
                         toggleState === 1
@@ -85,6 +87,16 @@ const Qualication = () => {
                                     calender="2022 - 2022"/>
 
                     </div>
+
+                    <div className="qualication__data">
+                        <CartQuality title="One Oracles Next Education"
+                                    subtitle="Colombia - Alura Latam"  
+                                    calender="2023"/>
+                       <div>
+                            <span className="qualication__rounder"></span>
+                            <span className="qualication__line"></span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className={toggleState ===2 ? "qualication__content qualication__content-active":"qualication__content"}>
@@ -119,6 +131,8 @@ const Qualication = () => {
                 </div> 
                 </div>
             </div>
+            </div>
+
         </section>
     )
 }

@@ -1,13 +1,14 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '@/assets/logo.ico'
+import logo from '../../../public/logo.ico'
 import './footer.css'
 const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-        <h1 className="footer__title"><Image
+        <h1 className="footer__title">
+    <Image
       src={logo}
       width={100}
       height={100}

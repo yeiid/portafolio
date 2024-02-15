@@ -3,11 +3,15 @@
 .qualication__container{
   max-width: 768px;
 }
-
+.qualication__conten{
+  background: rgba(255, 255, 255, 0.26);
+  display: grid;
+}
 .qualication__tabs{
   display: flex;
-  justify-content: center;
-  margin-bottom: var(--mb-2);
+  justify-content: space-around;
+
+  /* margin-bottom: 1rem; */
 }
 
 .qualication__button{
@@ -33,7 +37,7 @@
 
 .qualication__sections{
   display: grid;
-  grid-template-columns: 0.5fr;
+  grid-template-columns: 0.6fr;
   justify-content: center
 }
 

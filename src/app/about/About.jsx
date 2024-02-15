@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import './about.css';
-import AboutImg from '../../assets/about.jpeg';
+import AboutImg from '../../../public/about.png';
 
 import { Info } from './Info';
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
             <p className="about__description">
             Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.
             </p>
-            <a download='' href="../../assets" className="button button--flex">
+            <a  href="https://asset.cloudinary.com/dbpuq1kku/8c7f08973a8825f50c1454ff13b33af9" download className="button button--flex">
               Download CV
               <svg
                 className="button__icon"

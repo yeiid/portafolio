@@ -1,19 +1,37 @@
 
+#services{
+    margin: 2rem 2rem 4rem;
+    background: rgba(255, 255, 255, 0.26);
 
+}
 .services__container{
     grid-template-columns: repeat(3, 270px);
     justify-content: center;
     column-gap: 1.8rem;
-    background: rgba(255, 255, 255, 0.26);
 }
 
 .services__content{
     /* position: relative; */
     border: 1px solid rgb(0, 0, 0, 0.1);
-    background-color: var(--container-color);
+    /* background-color: var(--container-color); */
     padding: 6rem 0 2rem 2.5rem ;
-   
+}
+/* .Cart1{
+    background-image: url(/encriptardor.png);
     
+
+} */
+.Cart2{
+    background-image: url(/encriptardor.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Cart3{
+    background-image: url(/ecoraices-web.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .services__icon{
@@ -61,15 +79,15 @@
     padding: 0 1rem;
     opacity: 0;
     visibility: hidden;
-    transition: 3s;
+    transition: 1s;
 }
 
 .services__modal-content{
-    /* background-image: url(/portafolio/public//encriptardor.png); */
-    width: 500px;
+    width: 800px;
+    height: 500px;
     position: relative;
     background-color: var(--container-color);
-    padding: 4.5rem 2.5rem 2.5rem;
+    /* padding: 4.5rem 2.5rem 2.5rem; */
     border-radius: 1.5rem;
 }
 
@@ -87,12 +105,12 @@
 .services__modal-title,
 .services__modal-descriptiom{
     text-align: center;
-}
+} 
 
 .services__modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-2);
 }
 
 .services__modal-descriptiom{

@@ -1,19 +1,16 @@
 
-.home{
-    background: rgba(206, 198, 198, 0.233);
+#home{
+    margin: 2rem 2rem 4rem;
+    background: rgba(252, 252, 252, 0.548);
 }
 .home__container{
     row-gap: 7rem;
-   
-
-
 }
 .home__content{
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
-    /* background: rgba(206, 198, 198, 0.233); */
 }
 .home__social {
     display: grid;

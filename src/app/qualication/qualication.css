@@ -1,10 +1,12 @@
-
+#qualication{
+  margin: 2rem 2rem 4rem;
+  background: rgba(255, 255, 255, 0.26);
+}
 
 .qualication__container{
   max-width: 768px;
 }
 .qualication__conten{
-  background: rgba(255, 255, 255, 0.26);
   display: grid;
 }
 .qualication__tabs{

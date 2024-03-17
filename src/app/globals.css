@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --header-height: 3rem;
 
@@ -10,7 +9,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color:#000000; 
+  --title-color: #000000;
   --title-color-dark: hsl(var(--hue), var(--sat), 022%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -70,12 +69,14 @@
   padding: 0;
 }
 body {
-  font-family: 'Bungee Spice', sans-serif;
+  font-family: "Bungee Spice", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(0, 0, 0, 0.26);
   background-image: url(../../public/3398604.jpg);
-
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 button,
@@ -84,7 +85,6 @@ textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
-
 
 h1,
 h2,
@@ -168,8 +168,6 @@ img {
   align-items: center;
 }
 
-
-
 /*=============== BREAKPOINTS ===============*/
 
 @media screen and (max-width: 992px) {
@@ -187,7 +185,6 @@ img {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   body {
     margin: 0 0 var(--header-height) 0;
@@ -199,12 +196,11 @@ img {
 
   .section__subtitle {
     margin-bottom: var(--mb-3);
-  } 
+  }
 }
 
 @media screen and (max-width: 576px) {
 }
-
 
 @media screen and (max-width: 350px) {
   :root {
@@ -215,4 +211,3 @@ img {
     margin-right: var(--mb-1);
   }
 }
-

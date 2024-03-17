@@ -1,6 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import 'boxicons/css/boxicons.min.css';
+import Header from './header/sidenav'
+import Footer from './footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,9 +15,10 @@ export default function RootLayout({ children }) {
     <html lang="es">
 
       <body className={inter.className}>
-      
+      <Header /> 
         {children}
-        
+        <Footer/> 
+
         </body>
     </html>
   )

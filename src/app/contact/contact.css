@@ -1,11 +1,12 @@
-
-
+#contact{
+    margin: 2rem 2rem 4rem;
+    background: rgba(252, 252, 252, 0.548);
+}
 .contact__container{
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 6rem;
     padding-bottom: 3rem;
-    background: rgba(255, 255, 255, 0.26);
 
 }
 

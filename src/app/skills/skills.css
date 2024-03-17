@@ -1,6 +1,9 @@
 
 
-
+#skills{
+    margin: 2rem 2rem 4rem;
+    background: rgba(255, 255, 255, 0.26);
+}
 .skills__container{
     grid-template-columns: repeat(2, 350px);
     column-gap: 3rem;

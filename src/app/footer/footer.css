@@ -4,6 +4,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgb(255, 253, 253);
     width: 100%;
+    
 }
 
 
@@ -69,13 +70,21 @@
     }
 }
 @media screen and (max-width: 768px) {
+    .footer{
+        bottom: 0;
+    }
 
 
 }
 @media screen and (max-width: 576px) {
+    .footer{
+        bottom: 0;
+    }
 }
 
 
 @media screen and (max-width: 350px) {
-
+    .footer{
+        bottom: 0;
+    }
 }

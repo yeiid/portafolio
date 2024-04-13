@@ -1,25 +1,40 @@
 "use client"
-
 import { useRef } from "react";
 
-// import emailjs from "@emailjs/browser";
 import "./contact.css";
 
 const Contact = () => {
-  const form = useRef();
+const form = useRef()
+  // Función para enviar el correo electrónico
+  const sendEmail = async (event) => {
+    event.preventDefault();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const project = event.target.project.value;
 
-    emailjs
-      .sendForm(
-        "service_rrjroif",
-        "template_u1qds09",
-        form.current,
-        "4_MFTcOcd0vRANI7d"
-      )
-        e.target.reset()
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, project })
+      });
+
+      if (response.ok) {
+        console.log("Email sent successfully");
+        // Puedes hacer algo después de enviar el correo electrónico, como mostrar un mensaje de éxito o redirigir al usuario a otra página
+      } else {
+        console.error("Error sending email");
+        // Maneja el error, por ejemplo, mostrando un mensaje de error al usuario
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      // Maneja el error, por ejemplo, mostrando un mensaje de error al usuario
+    }
   };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -113,7 +128,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button type="submit"className="button button--flex">
               Send Message
               <svg
                 className="button__icon"

@@ -23,8 +23,8 @@ const Services = () => {
             services__title="Encriptador-Alura-Oracle-ONE"
             image= "/encriptardor.png"
             info= "Projecto del curos de Oracle con alura latam"
-            href= "https://ecoraices-proyect.vercel.app/"
-            parrafo = " LINK : https://ecoraices-proyect.vercel.app/"
+            href= "https://encriptador-alura-oracle-one.vercel.app/"
+            parrafo = " LINK : https://encriptador-alura-oracle-one.vercel.app/"
           />
         </div> 
         <div className="Cart3">

@@ -1,7 +1,7 @@
 import Home from './home/Home';
 import About from './about/About';
 import Skills from './skills/Skills';
-import Services from './services/Services';
+import Services from './proyect/Proyects';
 import Qualication from './qualication/Qualication';
 import Contact from './contact/Contact'
 

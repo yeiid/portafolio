@@ -1,8 +1,9 @@
-
+import React from "react";
 import "./contact.css";
 
-const Contact = () => {
+interface ContactProps {}
 
+const Contact: React.FC<ContactProps> = () => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -23,7 +24,6 @@ const Contact = () => {
                 href="mailto:yeifranhernandez16@gmail.com"
                 className="contact__button"
               >
-                {" "}
                 write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
               </a>
@@ -39,7 +39,6 @@ const Contact = () => {
                 href="https://api.whatsapp.com/send?phone=3024679206&text=comunicate conmigo"
                 className="contact__button"
               >
-                {" "}
                 write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
               </a>
@@ -51,8 +50,10 @@ const Contact = () => {
               <h3 className="contact__card-title">Messenger</h3>
               <span className="contact-data">user.fb123</span>
 
-              <a href="https://www.facebook.com/yeifran.hernandez4/" className="contact__button">
-                {" "}
+              <a
+                href="https://www.facebook.com/yeifran.hernandez4/"
+                className="contact__button"
+              >
                 write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
               </a>
@@ -63,14 +64,14 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
 
-          <form ref={form} onSubmit={sendEmail} className="contact__form ">
+          <form className="contact__form ">
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
                 type="name"
                 name="name"
                 className="contact__form-input"
-                placeholder="Inserte your Name"
+                placeholder="Insert your Name"
               />
             </div>
 
@@ -80,7 +81,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Inserte your mail"
+                placeholder="Insert your mail"
               />
             </div>
 
@@ -89,14 +90,12 @@ const Contact = () => {
               <textarea
                 name="project"
                 id=""
-                cols="30"
-                rows="10"
                 className="contact__form-input"
-                placeholder="Inserte your project"
+                placeholder="Insert your project"
               ></textarea>
             </div>
 
-            <button type="submit"className="button button--flex">
+            <button type="submit" className="button button--flex">
               Send Message
               <svg
                 className="button__icon"
@@ -115,7 +114,6 @@ const Contact = () => {
                   fill="var(container-color"
                 ></path>
               </svg>
-
             </button>
           </form>
         </div>

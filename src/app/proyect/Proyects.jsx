@@ -1,6 +1,6 @@
 import { CartServices } from "../../components/CartServices";
 
-const Services = () => {
+const Proyect = () => {
   return (
     <section className="m-8 mb-16 bg-white bg-opacity-40">
       <h2 className="section__title text-3xl font-bold text-center mb-4">Projects</h2>
@@ -40,4 +40,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Proyect;
